@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "cliente-app": {
+    "clientes-app": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/cliente-app",
+            "outputPath": "dist/clientes-app",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -26,7 +26,6 @@
             "styles": [
               "src/styles.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css"
-              
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
@@ -67,18 +66,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "cliente-app:build"
+            "browserTarget": "clientes-app:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "cliente-app:build:production"
+              "browserTarget": "clientes-app:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "cliente-app:build"
+            "browserTarget": "clientes-app:build"
           }
         },
         "test": {
@@ -115,19 +114,19 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "cliente-app:serve"
+            "devServerTarget": "clientes-app:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "cliente-app:serve:production"
+              "devServerTarget": "clientes-app:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "cliente-app",
+  "defaultProject": "clientes-app",
   "cli": {
-    "analytics": "e4644489-b27d-49dd-82f4-4ac4f7377ea5"
+    "analytics": "f2c74793-37cc-467c-9826-7358e2a88fa8"
   }
 }
