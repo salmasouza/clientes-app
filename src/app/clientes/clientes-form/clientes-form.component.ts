@@ -70,6 +70,7 @@ export class ClientesFormComponent implements OnInit {
         this.success = true;
         this.errors = null;
         this.cliente = response;
+        this.cliente = new Cliente();
         
       }, errorResponse => {
         this.success = false;
