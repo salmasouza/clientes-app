@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { Usuario } from './usuario';
 
 @Component({
   selector: 'app-login',
