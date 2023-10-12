@@ -17,13 +17,14 @@ export class ClientesService {
   constructor(private http : HttpClient) { }
 
   salvarCliente(cliente : Cliente) : Observable<Cliente>{
+   
 
     return this.http.post<Cliente>(`${this.apiURL}/api/clientes`, cliente);
     
   } 
 
   getClientes() : Observable<Cliente[]> {
-
+   
     return this.http.get<Cliente[]>(`${this.apiURL}/api/clientes`);
   
   }
